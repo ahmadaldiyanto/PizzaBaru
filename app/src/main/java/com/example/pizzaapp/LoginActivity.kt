@@ -43,11 +43,11 @@ class LoginActivity : AppCompatActivity() {
             }
 
             //check data
-            val data:String = dbHelper.checkData("damaradii.nugroho@gmail.com")
+            val data:String = dbHelper.checkData("ahmadaldi@gmail.com")
             Toast.makeText(this@LoginActivity, "Result : " + data, Toast.LENGTH_SHORT).show()
             if (data==null) {
                 //insert data
-                dbHelper.addAccount("damaradii.nugroho@gmail.com", "damar adi nugroho", "cashier", "12345")
+                dbHelper.addAccount("ahmadaldi@gmail.com", "Ahmad Aldiyanto", "cashier", "12345")
             }
         }
     }
